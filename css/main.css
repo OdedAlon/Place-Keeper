@@ -57,3 +57,16 @@ a {
 .main-pref-side {
     flex-grow: 1;
 }
+
+.btn-mylocation {
+    max-width: 50px;
+}
+
+.btn-mylocation:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.main-map-page {
+    display: flex;
+}
