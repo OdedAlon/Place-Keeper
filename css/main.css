@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    background-color: lightyellow;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: blue;
+}
+
+h2 {
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+a {
+    font-family: arial;
+    font-size: 40px;
+    align-self: left;
+    margin: 40px;
+}
+
+.main {
+    display: flex;
+}
+
+.main img {
+    width: 45vw;
+}
+
+.img-container {    
+    flex-grow: 1;
+}
+
+.links {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-pref {
+    display: flex;
+}
+
+.form-pref {
+    text-align: left;
+    font-family: arial;
+    flex-grow: 1;
+    flex-basis: 180px;
+    background-color: rgb(154, 167, 243);
+    font-size: 30px;
+    padding: 40px;
+    margin: 40px;
+}
+
+.main-pref-side {
+    flex-grow: 1;
+}

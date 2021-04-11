@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=RocknRoll+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Place Keeper</title>
+</head>
+
+<body onload="init()">
+    <h1>Place Keeper</h1>
+    <h2>Preferences</h2>
+    <a href="index.html">Back</a>
+
+    <dev class="main-pref" onsubmit="onSetPref(event)">
+        <dev class="main-pref-side"></dev>
+        <form class="form-pref">
+            <label for="color">Background color:</label>
+            <input type="color" name="color" id="color"></br></br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" name="date" id="date"></br></br>
+            <label for="time">Time of Birth:</label>
+            <input type="time" name="time" id="time"></br></br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required></br></br>
+            <label for="age">E-mail:</label>
+            <input type="range" name="age" id="age" min="13" max="120" value="30"
+            onchange="showAge(this.value);"><span id="sAge">30</span></br></br>
+            <button type="submit">Submit</button>
+        </form>
+        <dev class="main-pref-side"></dev>
+    </dev>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/user-pref-service.js"></script>
+    <script src="js/place-service.js"></script>
+    <script src="js/place-controler.js"></script>
+</body>
+
+</html>
